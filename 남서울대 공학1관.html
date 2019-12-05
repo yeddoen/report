@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>공학 1관</title>
+    <style type="text/css">
+    #tit {
+      background-color: #cceeff;
+      font-size: 22pt; font-weight: bold;
+      margin: 40px;  padding: 20px;
+      border: 4px solid #000066; border-radius: 50px;
+    }
+    a{text-decoration: none; color: #0077b3;}
+    .major{
+      margin-left: 40px; float: left;
+      padding-right: 30px; width: 500px;height: 300px;
+    }
+    .floor{
+      float: left;padding-right: 30px;
+      width: 500px;height: 300px;
+    }
+    .info{
+      margin-left: 40px; float: left;
+    }
+    p.inp{background-color: #cceeff;font-size: 11pt;}
+    #No{font-size: 9pt;}
+    #search{
+      float: right; padding: 7px; font-size: 11pt; margin-top: 570px; font-weight: bold;
+      background: #cceeff; border: 1px; border-radius: 5px;
+    }
+    #home{
+      float: right; border:1px;border-radius: 5px;
+       background-color: white; padding: 4px;
+     }
+    #home:hover,summary:hover{color: white;background-color: #000066}
+    </style>
+  </head>
+  <body>
+    <header>
+      <br/><p><span id="tit">공학 1관</span></p>
+      <button id="home" onclick="location.href='index.html'">>>메인으로 돌아가기</button><br/>
+    </header>
+    <article>
+      <section> 
+        <hr>
+        <figure>
+        <img src="../공학1관.jpg" width="800" height="600" alt="공학1관">
+        <input id="search" type="button" onclick="Search();" value="✔강의실 찾기"/>
+        <figcaption id="No">건물 No.1</figcaption>
+        </figure>
+        <hr/>
+      <div class="major">
+          <h3>사용 학과</h3>
+          <details><summary>컴퓨터소프트웨어학과 </summary>
+          <p class="inp">&nbsp;컴퓨터소프트웨어학과는 유비쿼터스 컴퓨팅 시대와 다양한 학제간의 융합을 주도할 창의적 소프트웨어 기술 전문성을 갖춘 인력을 육성하기 위하여 이론과 실무를 겸비하는 교과과정을 운영하고 있다. 특히 정부에서 주관하였던 IT교과과정 개편사업에 우수한 성적으로 선정이 되어 국가 지원을 바탕으로 산업체 수요 지향적 인력 양성의 교육 목표 아래 다양한 기업들과 인턴십, 현장실습 그리고 캡스톤디자인 등의 실무 중심 교육과정을 제공하고 있다.</p></details>
+        <details><summary>전자공학과</summary>
+          <p class="inp">&nbsp; 고도로 산업화된 정보화 시대에서 필수라 할 수 있는 전기, 전자, 통신 및 제어공학의 전 분야에 대하여 연구하고 교육한다. 전자공학 전반에 걸쳐 철저한 이론과 개념을 정립할 수 있는 교과목을 제공하고, 창의적인 설계 능력을 배양할 수 있도록 실험실습을 강화하여 실무형 창의 공학인재를 양성하고 있다.</p></details>
+        </div>
+      <div class="floor">
+        <h3>층별 안내</h3>
+        <details><summary>1층</summary>
+          <p class="inp">&nbsp;교무처, 교무저장실, 입학사정관실, 입학홍보처장실, 입학홍보처 세미나실, 자료실, 인쇄실 </p></details>
+        <details><summary>2층</summary>
+          <p class="inp">&nbsp;컴퓨터소포트웨어학과교수연구실, 실습실, PT강의실, 컴퓨터소포트웨어학과사무실, 기획조정관리실, 컴퓨터소포트웨어학과학생회실, 연구자료실, Pc유지보수팀  </p></details>
+        <details><summary>3층</summary>
+          <p class="inp">&nbsp;교수연구실, 실습실, 정보통신공학과학생회실,세미나실</p></details>
+        <details><summary>4층</summary>
+          <p class="inp">&nbsp;교수연구실, 실습실, PT강의실</p></details>
+        <details><summary>5층</summary>
+          <p class="inp">&nbsp;교수연구실, 실습실, 전자공학과사무실, 전자공학과 학생회실</p></details>
+      </div>
+      <div class="info">
+        <h3>ⓘ컴퓨터소프트웨어학과</h3>
+        <ul>
+          <li>☎)041-580-2107</li>
+          <li><a href="https://cs.nsu.ac.kr/" target="_blank" title="컴퓨터소프트웨어학과">cs.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ전자공학과</h3>
+        <ul>
+          <li>☎)전화번호</li>
+          <li><a href="https://ee.nsu.ac.kr/" target="_blank" title="전자공학과">ee.nsu.ac.kr</a></li>
+        </ul>
+      </div>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function Search(){
+        var choice = prompt("강의실 번호를 입력하세요.↓↓");
+        var m=parseInt(choice);
+        if (1101<=m&&m<=1109)
+             alert("공학1관 1층에 있습니다.");
+        else if (1201<=m&&m<=1209)
+            alert("공학1관 2층에 있습니다.");
+        else if (1301<=m&&m<=1310)
+            alert("공학1관 3층에 있습니다.");
+        else if (1401<=m&&m<=1410)
+            alert("공학1관 4층에 있습니다.");
+        else if (1501<=m&&m<=1507)
+            alert("공학1관 5층에 있습니다.");
+        else
+            alert("존재하지 않는 강의실 번호입니다.");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>화정관</title>
+    <style type="text/css">
+    #tit {
+      background-color: #cceeff;
+      font-size: 22pt; font-weight: bold;
+      margin: 40px;  padding: 20px;
+      border: 4px solid #000066; border-radius: 50px;
+    }
+    a{text-decoration: none; color: #0077b3;}
+    .major{
+      margin-left: 40px;float: left;
+      padding-right: 30px; width: 500px;height: 300px;
+    }
+    .floor{float: left;padding-right: 30px; width: 500px;height: 300px;}
+    .info{margin-left: 40px; float: left;}
+    p.inp{background-color: #cceeff;font-size: 11pt;}
+    #No{font-size: 9pt;}
+    #search{
+      float: right; padding: 7px; font-size: 11pt; margin-top: 570px; font-weight: bold;
+      background: #cceeff; border: 1px; border-radius: 5px;
+    }
+    #home{
+      float: right; border:1px;border-radius: 5px;
+       background-color: white; padding: 4px;
+     }
+    #home:hover,summary:hover{color: white;background-color: #000066}
+    </style>
+  </head>
+  <body>
+    <header>
+      <br/><p><span id="tit">화정관</span></p>
+      <button id="home" onclick="location.href='index.html'">>>메인으로 돌아가기</button><br/>
+    </header>
+    <article>
+      <section>
+        <hr>
+        <figure>
+        <img src="../화정관.jpg" width="800" height="600" alt="화정관">
+        <input id="search" type="button" onclick="Search();" value="✔강의실 찾기"/>
+        <figcaption id="No">건물 No.5</figcaption>
+        </figure>
+        <hr/>
+      <div class="major">
+        <h3>사용 학과</h3>
+        <details><summary>실용음악과</summary>
+          <p class="inp">&nbsp;실용음악의 사회적 수요가 급증하고 있는 시대적 요구에 맞춰 재즈와 대중음악 등 폭넓은 음악 이론을 기본으로 학생 개인의 음악적 능력을 더욱 향상시킬 수 있는 실기 위주의 교육과정을 통해 실용음악 분야 의 전문지식을 갖춘 창조적인 음악인 육성과 21세기 예술 문화 발전을 선도하는 현장 밀착형 실용음악 전문가를 양성한다.</p></details>
+        <details><summary>교양대학</summary>
+          <p class="inp">&nbsp;교양대학,교양과정부는 기독교적인 인성과 현대사회에 필요한 교양지식을 함양하여 섬기는 인재를 양성하는데 목적을 두고 있다. 원어민에 의한 어학교육을 통하여 국제화에 대한 자신감을 함양하는 것은 물론이고 현장감있는 국제감각을 배양함으로써 미래지향적 인재를 양성한다.</p></details>
+      </div>
+      <div class="floor">
+        <h3>층별 안내</h3>
+        <details><summary>B1층</summary>
+          <p class="inp">&nbsp;대강의실, 대체치육학과한약실험실, 선교합창단실</p></details>
+        <details><summary>1층</summary>
+          <p class="inp">&nbsp;교수연구실(Andrew Mutch, Robert Campbell, 김범호, 유정), 교직부행정실, 수업행동분석실, 컴퓨터실습실1,2, 어학실습실, 관리실</p></details>
+        <details><summary>2층</summary>
+          <p class="inp">&nbsp;시청각실, 교목실, 채플강당, 기도실</p></details>
+        <details><summary>3층</summary>
+          <p class="inp">&nbsp;컴퓨터실습실3, 교수연구실(이성철, 안기수, 이사야, 홍성룡, 문시영), 교양학과행정사무실, 채플강당, 주조정실, 성암기독사상연구소</p></details>
+        <details><summary>4층</summary>
+          <p class="inp">&nbsp;교수연구실(Michael Monahan, Amanda Hill, Robert Harvey Brlan, J.Qulrk, Leandros Olivas, 장선영, 한미희, 이석열, 허영주, 오혜진), PT강의실, 시청각실</p></details>
+        <details><summary>5층</summary>
+          <p class="inp">&nbsp;PT강의실, 교양학과교수연구실</p></details>
+      </div>
+      <div class="info">
+        <h3>ⓘ실용음악학과</h3>
+        <ul>
+          <li>☎)041-580-3220</li>
+          <li><a href="https://nsumusic.nsu.ac.kr/" target="_blank" title="실용음악학과 홈페이지">nsumusic.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ교양대학</h3>
+        <ul>
+          <li>☎)041-580-2300</li>
+          <li><a href="https://ky.nsu.ac.kr/" target="_blank" title="교양대학 홈페이지">ky.nsu.ac.kr</a></li>
+        </ul>
+      </div>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function Search(){
+        var choice = prompt("강의실 번호를 입력하세요.↓↓");
+        var m=parseInt(choice);
+        if (5001<=m&&m<=5009)
+             alert("화정관 지하 1층에 있습니다.");
+        else if (5101<=m&&m<=5109)
+            alert("화정관 1층에 있습니다.");
+        else if (5201<=m&&m<=5209)
+            alert("화정관 2층에 있습니다.");
+        else if (5301<=m&&m<=5309)
+            alert("화정관 3층에 있습니다.");
+        else if (5401<=m&&m<=5409)
+            alert("화정관 4층에 있습니다.");
+        else if (5501<=m&&m<=5509)
+            alert("화정관 5층에 있습니다.");
+        else
+            alert("존재하지 않는 강의실 번호입니다.");
+      }
+    </script>
+  </body>
+</html>

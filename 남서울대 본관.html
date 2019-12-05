@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>본관</title>
+    <style type="text/css">
+    #tit {
+      background-color: #cceeff;
+      font-size: 22pt; font-weight: bold;
+      margin: 40px;  padding: 20px;
+      border: 4px solid #000066; border-radius: 50px;
+    }
+    a{text-decoration: none; color: #0077b3;}
+    .major{
+      margin-left: 40px; float: left;
+      padding-right: 30px; width: 500px;height: 300px;
+    }
+    .floor{
+      float: left;padding-right: 30px;
+      width: 500px;height: 300px;
+    }
+    .info{
+      margin-left: 40px; float: left;
+    }
+    p.inp{background-color: #cceeff;font-size: 11pt;}
+    #No{font-size: 9pt;}
+    #search{
+      float: right; padding: 7px; font-size: 11pt; margin-top: 570px; font-weight: bold;
+      background: #cceeff; border: 1px; border-radius: 5px;
+    }
+    #home{
+      float: right; border:1px;border-radius: 5px;
+       background-color: white; padding: 4px;
+     }
+    #home:hover,summary:hover{color: white;background-color: #000066}
+    </style>
+  </head>
+  <body>
+    <header>
+      <br/><p><span id="tit">본 관</span></p>
+      <button id="home" onclick="location.href='index.html'">>>메인으로 돌아가기</button><br/>
+    </header>
+    <article>
+      <section>
+        <hr>
+        <figure>
+        <img src="../본관.jpg" width="800" height="600" alt="본관">
+        <input id="search" type="button" onclick="Search();" value="✔강의실 찾기"/>
+        <figcaption id="No">건물 No.6</figcaption>
+        </figure>
+        <hr/>
+      <div class="major">
+          <h3>사용학과</h3>
+          <details><summary>정보통신공학과</summary>
+          <p class="inp">&nbsp;정보통신공학은 유·무선의 통신공학과 전자공학 및 컴퓨터 공학이 복합된 IT 융합 학문이다. 정보통신에 관한 전반적인 이론 습득과 하드웨어 및 소프트웨어 설계 능력을 배양하고, 모바일 프로그래밍, 통신회로 실습, 통신응용 소프트웨어, 데이터통신망 설계관리 등의 각종 정보통신 실습을 통해 실무 전문 인력을 배출한다.</p></details>
+        <details><summary>산업경영공학과</summary>
+          <p class="inp">&nbsp;산업경영공학은 과학적 원리와 경영전략을 접목하여 기업의 업무과정을 혁신하고 체계화하며, 기업 경영을 개선할 기회를 찾아내고 이에 대해 합리적인 대안을 제시하는데 필요한 과학적 이론과 실무적 기법을 다루는 학문이다. 기업이 제품 또는 서비스를 생산하는데 필요한 다양한 요소들, 즉, 인력, 자재, 설비, 자금 등을 포함하여 기업의 경영목적을 달성하는 데 필요한 모든 요소들을 최적으로 조합함으로써 경영의 효율을 극대화하는데 필요한 근본 원리를 학습한다. 또한, 4차 산업혁명의 사회적 변화를 주도하는 융합학과로서 빅데이터, 인공지능, 스마트 팩토리 등의 주제에 대해서도 학습기회를 제공하고 있으며, 특히 데이터 사이언스와 연관된 통계 이론 및 분석기법, 데이터 마이닝, 데이터분석 소프트웨어개발 등의 주제를 심도 있게 다루고 있다. </p></details>
+        </div>
+      <div class="floor">
+        <h3>층별 안내</h3>
+        <details><summary>1층</summary>
+          <p class="inp">&nbsp;대학발전평가단, 제2/3회의실, 대외협력처자료실, 당직실   </p></details>
+        <details><summary>2층</summary>
+          <p class="inp">&nbsp;이사장실, 총장실, 부총장실, 기획조정관리실장실, 비서실장실, 비서실   </p></details>
+        <details><summary>3층</summary>
+          <p class="inp">&nbsp;교수연구실, 정보전산원, 네트워크실, 중앙전산실, 소포트웨어실, 정보전산원자료실   </p></details>
+        <details><summary>4층</summary>
+          <p class="inp">&nbsp;교수연구실, 정보통신공학과사무실, 정보통신연구소   </p></details>
+        <details><summary>5층</summary>
+          <p class="inp">&nbsp;교수연구실, 산업경영공학과사무실, 대학선교기념예배실 </p></details>
+      </div>
+      <div class="info">
+        <h3>ⓘ정보통신공학과</h3>
+        <ul>
+          <li>☎)041-580-2120</li>
+	        <li><a href="https://nsuic.nsu.ac.kr/" target="_blank" title="정보통신공학과 홈페이지">nsuic.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ산업경영공학과</h3>
+        <ul>
+          <li>☎)041-580-2200</li>
+	        <li><a href="https://ie.nsu.ac.kr/" target="_blank" title="산업경영공학과 홈페이지">ie.nsu.ac.kr</a></li>
+        </ul>
+      </div>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function Search(){
+        var choice = prompt("강의실번호를 입력하세요.↓↓");
+        var m=parseInt(choice);
+        if (6101<=m&&m<=6106)
+             alert("본관 1층에 있습니다.");
+        else if (6201<=m&&m<=6206)
+            alert("본관 2층에 있습니다.");
+        else if (6301<=m&&m<=6305)
+            alert("본관 3층에 있습니다.");
+        else if (6401<=m&&m<=6405)
+            alert("본관 4층에 있습니다.");
+        else if (6501<=m&&m<=6507)
+            alert("본관 5층에 있습니다.");
+        else
+            alert("존재하지 않는 강의실 번호입니다.");
+      }
+    </script>
+  </body>
+</html>

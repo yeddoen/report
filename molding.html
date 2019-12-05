@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>조형학관</title>
+    <style type="text/css">
+    #tit {
+      background-color: #cceeff;
+      font-size: 22pt; font-weight: bold;
+      margin: 40px;  padding: 20px;
+      border: 4px solid #000066; border-radius: 50px;
+    }
+    a{text-decoration: none; color: #0077b3;}
+    .major{
+      margin-left: 40px;float: left;
+      padding-right: 30px; width: 500px;height: 300px;
+    }
+    .floor{float: left;padding-right: 30px; width: 500px;height: 300px;}
+    .info{margin-left: 40px; float: left;}
+    p.inp{background-color: #cceeff;font-size: 11pt;}
+    #No{font-size: 9pt;}
+    #search{
+      float: right; padding: 7px; font-size: 11pt; margin-top: 570px; font-weight: bold;
+      background: #cceeff; border: 1px; border-radius: 5px;
+    }
+    #home{
+      float: right; border:1px;border-radius: 5px;
+       background-color: white; padding: 4px;
+     }
+    #home:hover,summary:hover{color: white;background-color: #000066}
+    </style>
+  </head>
+  <body>
+    <header>
+      <br/><p><span id="tit">조형학관</span></p>
+      <button id="home" onclick="location.href='index.html'">>>메인으로 돌아가기</button><br/>
+    </header>
+    <article>
+      <section>
+        <hr>
+        <figure>
+        <img src="../조형학관.jpg" width="800" height="600" alt="조형학관">
+        <input id="search" type="button" onclick="Search();" value="✔강의실 찾기"/>
+        <figcaption id="No">건물 No.7</figcaption>
+        </figure>
+        <hr/>
+      <div class="major">
+        <h3>사용 학과</h3>
+        <details><summary>건축학과</summary>
+          <p class="inp">&nbsp;남서울대학교 건축학사 학위 교육 프로그램의 인증심사는 2017년도 5월에 실시하였으며, 그 결과 5년 유효기간 인증을 획득한 5년제 학과다. 국내외적으로 활발한 연구 및 실무 활동을 하고 있는 다수의 교수진과 우수한 설계 교육 환경을 구비하여 분야별로 체계적인 교육을 실시하여 분석력, 종합력, 판단력을 겸비한 차별화된 인재를 양성하고 있다.</p></details>
+        <details><summary>건축공학과</summary>
+          <p class="inp">&nbsp;산업현장에 필요한 실용화된 교육의 개발 및 습득을 통해 건축구조, 건설관리, 건축시공, 공학설계, 건축환경 및 건축설비 등 다양한 분야의 전문 인력을 양성하고 세계시장에서 중추적인 역할을 담당할 창조형 미래지향 전문 인력 양성을 목적으로 한다.</p></details>
+        <details><summary>유리세라믹디자인학과</summary>
+          <p class="inp">&nbsp;실험적이고 창의적인 조형예술 및 디자인을 지향하는 국내 유일의 학과로 유리조형과 건축도자를 중심으로 교육이 이루어지고 있다. 현대예술을 폭넓게 이해할 수 있는 순수조형과 현대사회에서 요구되는 디자인 능력을 함께 배양할 수 있도록 통합교육과정으로 구성되어 있다. 국내 최고 수준의 실습 기자재 및 교육장비와 우수한 교수진에 의한 종합적 교육을 통하여 학생들의 잠재된 창의성, 심미성, 실용성을 이끌어내 사회에 필요한 인재로 양성함을 목적으로 하고 있다.</p></details>
+      </div>
+      <div class="floor">
+        <h3>층별 안내</h3>
+        <details><summary>B2층</summary>
+          <p class="inp">&nbsp;창고, 전기실</p></details>
+        <details><summary>B1층</summary>
+          <p class="inp">&nbsp;유리세라믹디자인학과실습실, 건축도자연구소, 유리세라믹디자인학과학회실, 자료실, 유약보관실</p></details>
+        <details><summary>1층</summary>
+          <p class="inp">&nbsp;유리세라믹디자인학과교수연구실(고성희, 윤창식, 모인순, 김형종, 윤성훈, 손석정), 실습실, 유리세라믹디자인학과사무실, 기자재실</p></details>
+        <details><summary>2층</summary>
+          <p class="inp">&nbsp;교수연구실(신예경, 편종필, 공현구, 이용필, 김연주, 이우형), 실습실</p></details>
+        <details><summary>3층</summary>
+          <p class="inp">&nbsp;교수연구실(조경수, 이광영, 정건채, 민경석, 이종원), 건축공학과실습실, 건축공학과사무실, 친환경건축 CLINIC센터, 건축공학과학생회실, 기자재실</p></details>
+        <details><summary>4층</summary>
+          <p class="inp">&nbsp;교수연구실(송정화, 오건수, 최광호, 한동욱, 손보식), 건축학과실습실, 건축학과사무실, 기자재실</p></details>
+        <details><summary>5층</summary>
+          <p class="inp">&nbsp;도서관, 건축학과학생회실, 설계스튜디오, 1학년설계실, CAD실2</p></details>
+      </div>
+      <div class="info">
+        <h3>ⓘ건축학과</h3>
+        <ul>
+          <li>☎)041-580-2180</li>
+          <li><a href="https://arch.nsu.ac.kr/" target="_blank" title="건축학과 홈페이지">arch.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ건축공학과</h3>
+        <ul>
+          <li>☎)041-580-2762</li>
+          <li><a href="https://ae.nsu.ac.kr/" target="_blank" title="건축공학과 홈페이지">ae.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ유리세라믹디자인학과</h3>
+        <ul>
+          <li>☎)041-580-2210</li>
+          <li><a href="https://hwanjo.nsu.ac.kr/" target="_blank" title="유리세라믹디자인학과 홈페이지">hwanjo.nsu.ac.kr</a></li>
+        </ul>
+      </div>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function Search(){
+        var choice = prompt("강의실 번호를 입력하세요.↓↓");
+        var m=parseInt(choice);
+        if (7001<=m&&m<=7015) //지하2층엔 강의실이 없음.
+            alert("조형학관 지하1층에 있습니다.");
+        else if (7101<=m&&m<=7115)
+            alert("조형학관 1층에 있습니다.");
+        else if (7201<=m&&m<=7215)
+            alert("조형학관 2층에 있습니다.");
+        else if (7301<=m&&m<=7315)
+            alert("조형학관 3층에 있습니다.");
+        else if (7401<=m&&m<=7415)
+            alert("조형학관 4층에 있습니다.");
+        else if (7501<=m&&m<=7515)
+            alert("조형학관 5층에 있습니다.");
+        else
+            alert("존재하지 않는 강의실 번호입니다.");
+      }
+    </script>
+  </body>
+</html>

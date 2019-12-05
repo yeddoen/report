@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>지식정보관</title>
+    <style type="text/css">
+    #tit {
+      background-color: #cceeff;
+      font-size: 22pt; font-weight: bold;
+      margin: 40px;  padding: 20px;
+      border: 4px solid #000066; border-radius: 50px;
+    }
+    a{text-decoration: none; color: #0077b3;}
+    .major{
+      margin-left: 40px; float: left;
+      padding-right: 30px; width: 500px;height: 300px;
+    }
+    .floor{
+      float: left;padding-right: 30px;
+      width: 500px;height: 300px;
+    }
+    .info{
+      margin-left: 40px; float: left;
+    }
+    p.inp{background-color: #cceeff;font-size: 11pt;}
+    #No{font-size: 9pt;}
+    #search{
+      float: right; padding: 7px; font-size: 11pt; margin-top: 570px; font-weight: bold;
+      background: #cceeff; border: 1px; border-radius: 5px;
+    }
+    #home{
+      float: right; border:1px;border-radius: 5px;
+       background-color: white; padding: 4px;
+     }
+    #home:hover,summary:hover{color: white;background-color: #000066}
+    </style>
+  </head>
+  <body>
+    <header>
+      <br/><p><span id="tit">지식정보관</span></p>
+      <button id="home" onclick="location.href='index.html'">>>메인으로 돌아가기</button><br/>
+    </header>
+    <article>
+      <section>
+        <hr>
+        <figure>
+        <img src="../지식정보관.jpg" width="800" height="600" alt="지식정보관">
+        <input id="search" type="button" onclick="Search();" value="✔강의실 찾기"/>
+        <figcaption id="No">건물 No.15</figcaption>
+        </figure>
+        <hr/>
+      <div class="major">
+          <h3>사용 학과</h3>
+          <details><summary>치위생학과</summary>
+          <p class="inp">&nbsp;구강 건감검진을 위한 다양한 예방과 치료방법을 발전시키고 있으며 치과위생사 지도자 양성을 목표로 이론과 실무를 병행하며 전문지식을 배양하고 있으며, 실무실습 중심으로 교육을 진행하고 있습니다.</p></details>
+        <details>
+          <summary>학군단(ROTC)</summary>
+          <p class="inp">&nbsp;R: Reserve O: Officers T: Training C: Corps 의 약자로 예비 장교 후보생이라는 뜻을 가지고 있습니다. 2학년까지는 일반학생과 같이 생활하고 3,4학년이 되었을 땐 제복을 입고 군사학 수업을 수강합니다. 졸업 후에는 소위로 임관되며 대학생활 중에는 일정학점을 넘으면 학비를 전액지원 해줍니다.</p></details>
+        <details><summary>산학협력단</summary>
+          <p class="inp">&nbsp;산학연구를 기획하고 다양한 국책연구사업을 제안하는 산학협력기획과 연구재단, 국가 및 지자체, 산업체들의 다양한 연구를 지원하는 연구사업팀, 청년 및 예비 창업자들을 교육하고 청업을 지원하는 창업지원단 등 3개의 핵심 조직으로 구성되어있습니다. 또한 게스트하우스가 배치되어 있습니다.</p></details>
+        <details><summary>마탐스</summary>
+          <p class="inp">&nbsp;지식정보관 4층에 입주하여있는 카페로, 1800원~4000원대의 커피메뉴들과 브런치, 다양한 추천메뉴들이 나와 있습니다.</p></details>
+        </div>
+      <div class="floor">
+        <h3>층별 안내</h3>
+        <details><summary>1층</summary>
+          <p class="inp">&nbsp;로비, 치위생학과사무실, 강의실 </p></details>
+        <details><summary>2층</summary>
+          <p class="inp">&nbsp;사랑홀</p></details>
+        <details><summary>3층</summary>
+          <p class="inp">&nbsp;게스트하우스</p></details>
+        <details><summary>4층</summary>
+          <p class="inp">&nbsp;카페테리아</p></details>
+        <details><summary>5층</summary>
+          <p class="inp">&nbsp;학군단사무실</p></details>
+      </div>
+      <div class="info">
+        <h3>ⓘ치위생학과</h3>
+        <ul>
+          <li>☎)041-580-2560</li>
+          <li><a href="https://dentalhygiene.nsu.ac.kr/?m1=page%25&menu_id=1002%25" target="_blank" title="치위생학과 홈페이지">dentalhygiene.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ학군단(ROTC)</h3>
+        <ul>
+          <li>☎)041-580-3202</li>
+          <li><a href="https://nsu.ac.kr/?m1=page%25&menu_id=389%25" target="_blank" title="학군단(ROTC) 안내홈페이지">nsu.ac.kr</a></li>
+        </ul>
+      </div>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function Search(){
+        var choice = prompt("강의실 번호를 입력하세요.↓↓");
+        var m=parseInt(choice);
+        if (15101<=m&&m<=15115)
+             alert("지식정보관 1층에 있습니다.");
+        else if (15201<=m&&m<=15215)
+            alert("지식정보관 2층에 있습니다.");
+        else if (15301<=m&&m<=15315)
+            alert("지식정보관 3층에 있습니다.");
+        else if (15401<=m&&m<=15415)
+            alert("지식정보관 4층에 있습니다.");
+        else if (15501<=m&&m<=15515)
+            alert("지식정보관 5층에 있습니다.");
+        else
+            alert("존재하지 않는 강의실 번호입니다.");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>상경학관</title>
+    <style type="text/css">
+    #tit {
+      background-color: #cceeff;
+      font-size: 22pt; font-weight: bold;
+      margin: 40px;  padding: 20px;
+      border: 4px solid #000066; border-radius: 50px;
+    }
+    a{text-decoration: none; color: #0077b3;}
+    .major{
+      margin-left: 40px;float: left;
+      padding-right: 30px; width: 500px;height: 300px;
+    }
+    .floor{float: left;padding-right: 30px; width: 500px;height: 300px;}
+    .info{margin-left: 40px; float: left;}
+    p.inp{background-color: #cceeff;font-size: 11pt;}
+    #No{font-size: 9pt;}
+    #search{
+      float: right; padding: 7px; font-size: 11pt; margin-top: 570px; font-weight: bold;
+      background: #cceeff; border: 1px; border-radius: 5px;
+    }
+    #home{
+      float: right; border:1px;border-radius: 5px;
+       background-color: white; padding: 4px;
+     }
+    #home:hover,summary:hover{color: white;background-color: #000066}
+    </style>
+  </head>
+  <body>
+    <header>
+      <br/><p><span id="tit">상경학관</span></p>
+      <button id="home" onclick="location.href='index.html'">>>메인으로 돌아가기</button><br/>
+    </header>
+    <article>
+      <section>
+        <hr>
+        <figure>
+        <img src="../상경학관.jpg" width="800" height="600" alt="상경학관">
+        <input id="search" type="button" onclick="Search();" value="✔강의실 찾기"/>
+        <figcaption id="No">건물 No.3</figcaption>
+        </figure>
+        <hr/>
+      <div class="major">
+        <h3>사용 학과</h3>
+        <details><summary>세무학과</summary>
+          <p class="inp">&nbsp;기업이 요구하는 세무 지식을 체계적으로 교육하고, 실무능력을 갖춘 세무 분야에 기여할 세무 전문가를 양성하는데 목표를 둔다. 더불어 세무사, 공인회계사 자격증 및 세무관련 전문 자격시험에 대비하고 국가 또는 지방자치단체의 세무직 공무원 배출을 위한 전문적·실용적 교육 실시와 국제화 시대에 부합하는 글로벌 인재를 육성한다.</p></details>
+        <details><summary>경영학과</summary>
+          <p class="inp">&nbsp;경영학과가 추구하는 가치체계인 경영학과 정체성(DI: Department Identity)을 바탕으로 ‘타인을 배려하고 기업가정신을 가진 따뜻한 전문경영인 양성’을 교육 목표로 한다. 이러한 교육정신에 입각하여 기업경영의 기본기능을 교육하며, 각종 경영 이슈를 다루어 실무에 적용할 수 있는 문제 해결형 인재로 양성한다.</p></details>
+        <details><summary>국제유통학과</summary>
+          <p class="inp">&nbsp;국내와 해외 유통기업에 적합한 글로벌 유통전문 인력 양성을 목적으로 유통, 물류, 마케팅 관련 이론과 실무 역량을 습득하고 있다. 유통관련 분야의 국내 최고 교수진을 중심으로 졸업 후 현장에서 적용할 수 있는 실무 위주의 교육체계를 기반으로 운영한다.</p></details>
+        <details><summary>글로벌무역학과</summary>
+          <p class="inp">&nbsp;</p></details>
+        <details><summary>부동산학과</summary>
+          <p class="inp">&nbsp;기업이 요구하는 부동산 지식을 체계적으로 교육하고, 실무능력을 갖춘 부동산 분야에 기여할 부동산 전문가를 양성하는데 목표를 둔다. 더불어 감점평가사, 공인중개사, 주택관리사, 자산관리사, 금융에 관련된 자격증 및 국가 또는 지방자치단체의 지적직 공무원 배출을 위한 전문적·실용적 교육 실시와 국제화 시대에 부합하는 글로벌 인재를 육성한다.</p></details>
+      </div>
+      <div class="floor">
+        <h3>층별 안내</h3>
+        <details><summary>B1층</summary>
+          <p class="inp">&nbsp;PT강의실, 실습실</p></details>
+        <details><summary>1층</summary>
+          <p class="inp">&nbsp;부동산학과교수연구실, 부동산학과실습실, 부동산학과사무실, 부동산학과학생회실</p></details>
+        <details><summary>2층</summary>
+          <p class="inp">&nbsp;글로벌무역학과교수연구실, 글로벌무역학과실습실, 글로벌무역학과사무실, 글로벌무역학과학생회실</p></details>
+        <details><summary>3층</summary>
+          <p class="inp">&nbsp;국제유통학과교수연구실, 국제유통학과실습실, 국제유통학과사무실, 국제유통학과학생회실, 국제유통연구센터</p></details>
+        <details><summary>4층</summary>
+          <p class="inp">&nbsp;경영학과교수연구실, 경영학과실습실, 경영학과사무실, 경영학과학생회실, 경영리더쉽센터</p></details>
+        <details><summary>5층</summary>
+          <p class="inp">&nbsp;세무학과교수연구실, 세무학과실습실, 세무학과사무실, 세무학과학생회실</p></details>
+      </div>
+      <div class="info">
+        <h3>ⓘ세무학과</h3>
+        <ul>
+          <li>☎)041-580-2380</li>
+          <li><a href="https://tax.nsu.ac.kr/" target="_blank" title="세무학과 홈페이지">tax.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ경영학과</h3>
+        <ul>
+          <li>☎)041-580-2130</li>
+          <li><a href="https://ba.nsu.ac.kr/" target="_blank" title="경영학과 홈페이지">ba.nsu.ac.kr/</a></li>
+        </ul>
+        <h3>ⓘ국제유통학과</h3>
+        <ul>
+          <li>☎)041-580-2140</li>
+          <li><a href="https://md.nsu.ac.kr/" target="_blank" title="국제유통학과 홈페이지">md.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ글로벌무역학과</h3>
+        <ul>
+          <li>☎)041-580-2460</li>
+          <li><a href="https://trade.nsu.ac.kr/" target="_blank" title="글로벌무역학과 홈페이지">trade.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ부동산학과</h3>
+        <ul>
+          <li>☎)041-580-2690</li>
+          <li><a href="https://land.nsu.ac.kr/" target="_blank" title="부동산학과 홈페이지">land.nsu.ac.kr</a></li>
+        </ul>
+      </div>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function Search(){
+        var choice = prompt("강의실 번호를 입력하세요.↓↓");
+        var m=parseInt(choice);
+        if (3001<=m&&m<=3009)
+             alert("상경학관 지하 1층에 있습니다.");
+         else if (3101<=m&&m<=3109)
+             alert("상경학관 1층에 있습니다.");
+        else if (3201<=m&&m<=3209)
+            alert("상경학관 2층에 있습니다.");
+        else if (3301<=m&&m<=3309)
+            alert("상경학관 3층에 있습니다.");
+        else if (3401<=m&&m<=3409)
+            alert("상경학관 4층에 있습니다.");
+        else if (3501<=m&&m<=3509)
+            alert("상경학관 5층에 있습니다.");
+        else
+            alert("존재하지 않는 강의실 번호입니다.");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>성암문화체육관</title>
+    <style type="text/css">
+    #tit {
+      background-color: #cceeff;
+      font-size: 22pt; font-weight: bold;
+      margin: 40px;  padding: 20px;
+      border: 4px solid #000066; border-radius: 50px;
+    }
+    a{text-decoration: none; color: #0077b3;}
+    .major{
+      margin-left: 40px;float: left;
+      padding-right: 30px; width: 500px;height: 300px;
+    }
+    .floor{float: left;padding-right: 30px; width: 500px;height: 300px;}
+    .info{margin-left: 40px; float: left;}
+    p.inp{background-color: #cceeff;font-size: 11pt;}
+    #No{font-size: 9pt;}
+    #search{
+      float: right; padding: 7px; font-size: 11pt; margin-top: 570px; font-weight: bold;
+      background: #cceeff; border: 1px; border-radius: 5px;
+    }
+    #home{
+      float: right; border:1px;border-radius: 5px;
+       background-color: white; padding: 4px;
+     }
+    #home:hover,summary:hover{color: white;background-color: #000066}
+    </style>
+  </head>
+  <body>
+    <header>
+      <br/><p><span id="tit">성암문화체육관</span></p>
+      <button id="home" onclick="location.href='index.html'">>>메인으로 돌아가기</button><br/>
+    </header>
+    <article>
+      <section>
+        <hr>
+        <figure>
+        <img src="../성암문화체육관.png" width="800" height="600" alt="성암문화체육관">
+        <input id="search" type="button" onclick="Search();" value="✔강의실 찾기"/>
+        <figcaption id="No">건물 No.14</figcaption>
+        </figure>
+        <hr/>
+      <div class="major">
+        <h3>사용 학과</h3>
+        <details><summary>스포츠비즈니스학과</summary>
+          <p class="inp">&nbsp;스포츠의 과학적·경험적 이해를 바탕으로 스포츠비즈니스의 전문 지식 학습과 실습을 통해 스포츠산업분야에서 요구되는 차별화된 전문적 실무 능력뿐만 아니라 스포츠비즈니스 및 스포츠산업 발전에 기여 할 수 있는 바른 인성을 갖춘 스포츠비즈니스 글로벌 경영 전문가를 양성한다.</p></details>
+        <details><summary>스포츠건강관리학과</summary>
+          <p class="inp">&nbsp;기존의 운동건강학과를 더욱 특성화하여 스포츠, 레저 및 건강산업 분야에서 탁월하고 중추적인 역할을 담당하게 될 전문 스포츠건강관리사의 양성을 목적으로 두고 과학적인 운동프로그램을 개발하는 건강운동관리사, 근골격계 손상으로부터 회복과정에 개입하는 재활운동사, 스포츠팀의 경기력 향상을 위한 선수트레이너, 장애인들의 건강회복을 위한 특수체육지도사, 레저스포츠활동을 지도 할 여가스포츠지도사 등을 배출하고 있다.</p></details>
+      </div>
+      <div class="floor">
+        <h3>층별 안내</h3>
+        <details><summary>B1층</summary>
+          <p class="inp">&nbsp;태권도장, 검도장, 사우나실, 스쿼시장, 에어로빅실, 유아체육실, </p></details>
+        <details><summary>1층</summary>
+          <p class="inp">&nbsp;국민은행atm기, 선수대기실, 기구고, 주경기장, 심판실, VIP실, 방송실, 의무실, 방제실, 수영장, 강사의무실, 보조경기장</p></details>
+        <details><summary>2층</summary>
+          <p class="inp">&nbsp;운동검사처방실, 성암문화체육관운영본부, 사회교육원, 주경기장관객석, 휴게실, 강의실, 운동의학실</p></details>
+        <details><summary>3층</summary>
+          <p class="inp">&nbsp;위트니스센터, 탈의실, 스포츠비즈니스학과사무실, 스포츠비즈니스학과실습실, 주경기장관객석</p></details>
+        <details><summary>4층</summary>
+          <p class="inp">&nbsp;체력측정실, 여가정보분석실, 스포츠산업영상정보분석실, 스포츠경영컨설팅연구소</p></details>
+        <details><summary>5층</summary>
+          <p class="inp">&nbsp;교수연구실(은회관, 성기덕, 오일영, 이한용, 송제호, 양윤권, 이종호, 최종필)</p></details>
+      </div>
+      <div class="info">
+        <h3>ⓘ스포츠비즈니스학과</h3>
+        <ul>
+          <li>☎)041-580-2220</li>
+          <li><a href="https://sport.nsu.ac.kr/" target="_blank" title="스포츠비즈니스학과 홈페이지">sport.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ스포츠건강관리학과</h3>
+        <ul>
+          <li>☎)041-580-2630</li>
+          <li><a href="https://hes.nsu.ac.kr/" target="_blank" title="스포츠건강관리학과 홈페이지">hes.nsu.ac.kr</a></li>
+        </ul>
+      </div>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function Search(){
+        var choice = prompt("강의실 번호를 입력하세요.↓↓");
+        var m=parseInt(choice);
+        if (14001<=m&&m<=14008)
+             alert("성암문화체육관 지하 1층에 있습니다.");
+         else if (14101<=m&&m<=14120)
+             alert("성암문화체육관 1층에 있습니다.");
+        else if (14201<=m&&m<=14207)
+            alert("성암문화체육관 2층에 있습니다.");
+        else if (14301<=m&&m<=14314)
+            alert("성암문화체육관 3층에 있습니다.");
+        else if (14401<=m&&m<=14409)
+            alert("성암문화체육관 4층에 있습니다.");
+        else if (14501<=m&&m<=14509)
+            alert("성암문화체육관 5층에 있습니다.");
+        else
+            alert("존재하지 않는 강의실 번호입니다.");
+      }
+    </script>
+  </body>
+</html>

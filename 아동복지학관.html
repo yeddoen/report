@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>아동복지학관</title>
+    <style type="text/css">
+    #tit {
+      background-color: #cceeff;
+      font-size: 22pt; font-weight: bold;
+      margin: 40px;  padding: 20px;
+      border: 4px solid #000066; border-radius: 50px;
+    }
+    a{text-decoration: none; color: #0077b3;}
+    .major{
+      margin-left: 40px; float: left;
+      padding-right: 30px; width: 500px;height: 300px;
+    }
+    .floor{
+      float: left;padding-right: 30px;
+      width: 500px;height: 300px;
+    }
+    .info{
+      margin-left: 40px; float: left;
+    }
+    p.inp{background-color: #cceeff;font-size: 11pt;}
+    #No{font-size: 9pt;}
+    #search{
+      float: right; padding: 7px; font-size: 11pt; margin-top: 570px; font-weight: bold;
+      background: #cceeff; border: 1px; border-radius: 5px;
+    }
+    #home{
+      float: right; border:1px;border-radius: 5px;
+       background-color: white; padding: 4px;
+     }
+    #home:hover,summary:hover{color: white;background-color: #000066}
+    </style>
+  </head>
+  <body>
+    <header>
+      <br/><p><span id="tit">아동복지학관</span></p>
+      <button id="home" onclick="location.href='index.html'">>>메인으로 돌아가기</button><br/>
+    </header>
+    <article>
+      <section>
+        <hr>
+        <figure>
+        <img src="../아동복지학관.jpg" width="800" height="600" alt="아동복지학관">
+        <input id="search" type="button" onclick="Search();" value="✔강의실 찾기"/>
+        <figcaption id="No">건물 No.17</figcaption>
+        </figure>
+        <hr/>
+      <div class="major">
+          <h3>사용 학과와 시설</h3>
+          <details><summary>아동복지학과</summary>
+          <p class="inp">&nbsp;아동의 성장발달을 위해 각종 프로그램 개발, 정책 수립, 아동복지서비스 전달체계에 관하여 연구한다.
+		  어린이집, 아동연구원, 아동가족상담센터, 코칭리더십경영센터 등의 프로그램을 운영하며 실무중심 교육을 진행하고 있다.</p></details>
+        <details>
+          <summary>남서울어린이집</summary>
+          <p class="inp">&nbsp;아동복지학과 학생들에게 보육현장 실습 및 관찰을 통하여 훌륭한 보육전문인을 양성하고자 노력하고 있습니다.</p></details>
+        <details><summary>아동가족상담센터</summary>
+          <p class="inp">&nbsp;지역사회 아동 및 가족의 정신건강 문제를 예방, 개선하며 빈곤 아동을 위한 프로그램을 실시합니다.
+		  아동들이 실생활에서 겪는 어려움을 아동, 부모, 전문가와 협력하여 아동의 발달과 복지 증진에 기여합니다.</p></details>
+        <details><summary>코칭보육센터</summary>
+          <p class="inp">&nbsp;코칭이라는 기술을 기반으로 발달멸, 역할별 라이프 코칭과 기업의 성공전략으로 성장할 수 있는 비지니스 코칭을 지원하는 전문 코칭센터이다.</p></details>
+        </div>
+      <div class="floor">
+        <h3>층별 안내</h3>
+        <details><summary>1층</summary>
+          <p class="inp">&nbsp;남서울어린이집</p></details>
+        <details><summary>2층</summary>
+          <p class="inp">&nbsp;어린이도서관, 아동연구원</p></details>
+        <details><summary>3층</summary>
+          <p class="inp">&nbsp;건강가정지원센터</p></details>
+        <details><summary>4층</summary>
+          <p class="inp">&nbsp;아동가족상담센터</p></details>
+        <details><summary>5층</summary>
+          <p class="inp">&nbsp;아동복지학과학회실, 소강당, 강의실, 사물함</p></details>
+		  <details><summary>6층</summary>
+          <p class="inp">&nbsp;아동복지학과사무실, 아동복지학과교수연구실, 강의실</p></details>
+      </div>
+      <div class="info">
+        <h3>ⓘ아동복지학과</h3>
+        <ul>
+          <li>☎)041-580-2320</li>
+          <li><a href="https://cwnuri.nsu.ac.kr/" target="_blank" title="아동복지학과 홈페이지">cwnuri.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ부설어린이집</h3>
+        <ul>
+          <li>☎)041-580-2792</li>
+          <li><a href="http://childcare.nsu.ac.kr" target="_blank" title="어린이집 홈페이지">childcare.nsu.ac.kr</a></li>
+        </ul>
+      </div>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function Search(){
+        var choice = prompt("강의실 번호를 입력하세요.↓↓");
+        var m=parseInt(choice);
+        if (17101<=m&&m<=17115)
+             alert("아동복지학관 1층에 있습니다.");
+        else if (17201<=m&&m<=17215)
+            alert("아동복지학관 2층에 있습니다.");
+        else if (17301<=m&&m<=17315)
+            alert("아동복지학관 3층에 있습니다.");
+        else if (17401<=m&&m<=17415)
+            alert("아동복지학관 4층에 있습니다.");
+        else if (17501<=m&&m<=17515)
+            alert("아동복지학관 5층에 있습니다.");
+			else if (17501<=m&&m<=17515)
+            alert("아동복지학관 6층에 있습니다.");
+        else
+            alert("존재하지 않는 강의실 번호입니다.");
+      }
+    </script>
+  </body>
+</html>

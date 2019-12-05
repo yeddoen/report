@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>공학2관</title>
+    <style type="text/css">
+    #tit {
+      background-color: #cceeff;
+      font-size: 22pt; font-weight: bold;
+      margin: 40px;  padding: 20px;
+      border: 4px solid #000066; border-radius: 50px;
+    }
+    a{text-decoration: none; color: #0077b3;}
+    .major{
+      margin-left: 40px; float: left;
+      padding-right: 30px; width: 500px;height: 300px;
+    }
+    .floor{
+      float: left;padding-right: 30px;
+      width: 500px;height: 300px;
+    }
+    .info{
+      margin-left: 40px; float: left;
+    }
+    p.inp{background-color: #cceeff;font-size: 11pt;}
+    #No{font-size: 9pt;}
+    #search{
+      float: right; padding: 7px; font-size: 11pt; margin-top: 570px; font-weight: bold;
+      background: #cceeff; border: 1px; border-radius: 5px;
+    }
+    #home{
+      float: right; border:1px;border-radius: 5px;
+       background-color: white; padding: 4px;
+     }
+    #home:hover,summary:hover{color: white;background-color: #000066}
+    </style>
+  </head>
+  <body>
+    <header>
+      <br/><p><span id="tit">공학 2관</span></p>
+      <button id="home" onclick="location.href='index.html'">>>메인으로 돌아가기</button><br/>
+    </header>
+    <article>
+      <section>
+        <hr>
+        <figure>
+        <img src="../공학2관.jpg" width="800" height="600" alt="공학2관">
+        <input id="search" type="button" onclick="Search();" value="✔강의실 찾기"/>
+        <figcaption id="No">건물 No.2</figcaption>
+        </figure>
+        <hr/>
+      <div class="major">
+          <h3>사용학과</h3>
+          <details><summary>공간정보공학과</summary>
+          <p class="inp">&nbsp;4차 산업의 핵심이 되는 드론 맵핑, 위성영상활용, 사물인터넷 GIS, 교통네트워크분석, 위성측위시스템(헨), 지도학, 웹프로그래밍, 측량, 스마트폰 앱 개발
+	       등을 주요 교육 내용으로 하고 있다. 전공체험프로그램을 통해서 연구원, 기업체, 국가기관에서 수행되고 있는 공간정보의 살아있는 현장업무를 살펴볼 수 있다. 국내 최고의 실습기자재
+	       실습소프트웨어를 기반으로 이론뿐만 아니라 실무를 충실히 익힐 수 있는 실습 교육을 실시하고 있으며 전공 관련 학습활동 동아리를 통해서 도전적이고 창의적인 심화학습을 수행한다. </p></details>
+        <details><summary>멀티미디어학과</summary>
+          <p class="inp">&nbsp 빠르게 변화하고 있는 컴퓨팅 환경 및 IT기술과 감성이 결합되는 컨버전스로 인하여 그
+	       위상이 날로 높아져 가고 있다. 공학 기술과 예술적 감성을 동시에 교육해야하는 학과의 특성에 따라 본 학과에서는 콘텐츠제작 분야, 미디어프로그래밍 분야, 웹서비스 분야, 모바일소프트웨어
+	       분야, 가상증강현실 분야 등 다양한 실무중심의 멀티미디어 콘텐츠 제작전문가를 배출시키고 있다.  </p></details>
+        </div>
+      <div class="floor">
+        <h3>층별 안내</h3>
+        <details><summary>1층</summary>
+          <p class="inp">&nbsp;사무처, 법인사무국, 대외협력처, 대외협력처장실, 교환실, 국제협력실, 제1회의실, 평가2실, 평가3실, 기자재자료실 </p></details>
+        <details><summary>2층</summary>
+          <p class="inp">&nbsp;교수연구실, 실습실, PT강의실, 시청각실  </p></details>
+        <details><summary>3층</summary>
+          <p class="inp">&nbsp;교수연구실, 멀티미디어학과사무실, 멀티미디어학과학생회실, 남서울대학교노동조합MBRC, 실습실, 교수연구실   </p></details>
+        <details><summary>4층</summary>
+          <p class="inp">&nbsp;교수연구실, 실습실, 프리젠테이션실, 측량실, PT강의실, 공간정보공학과학생회실, 공간정보공학과사무실, 특성화대학원실  </p></details>
+        <details><summary>5층</summary>
+          <p class="inp">&nbsp;교수연구실, 실습실, 산업경영공학과학생회실 </p></details>
+      </div>
+      <div class="info">
+        <h3>ⓘ공간정보공학과</h3>
+        <ul>
+          <li>☎)041-580-2370</li>
+	        <li><a href="https://gis.nsu.ac.kr/" target="_blank" title="공간정보공학과 홈페이지">qis.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ멀티미디어학과</h3>
+        <ul>
+          <li>☎)041-580-2190</li>
+      	  <li><a href="https://mm.nsu.ac.kr/" target="_blank" title="멀티미디어학과 홈페이지">mm.nsu.ac.kr</a></li>
+        </ul>
+      </div>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function Search(){
+        var choice = prompt("강의실번호를 입력하세요.↓↓");
+        var m=parseInt(choice);
+        if (2101<=m&&m<=2110)
+             alert("공학2관 1층에 있습니다.");
+        else if (2201<=m&&m<=2205)
+            alert("공학2관 2층에 있습니다.");
+        else if (2301<=m&&m<=2310)
+            alert("공학2관 3층에 있습니다.");
+        else if (2401<=m&&m<=2412)
+            alert("공학2관 4층에 있습니다.");
+        else if (2501<=m&&m<=2510)
+            alert("공학2관 5층에 있습니다.");
+        else
+            alert("존재하지 않는 강의실 번호입니다.");
+      }
+    </script>
+  </body>
+</html>

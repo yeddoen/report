@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>디자인 정보관</title>
+    <style type="text/css">
+    #tit {
+      background-color: #cceeff;
+      font-size: 22pt; font-weight: bold;
+      margin: 40px;  padding: 20px;
+      border: 4px solid #000066; border-radius: 50px;
+    }
+    a{text-decoration: none; color: #0077b3;}
+    .major{
+      margin-left: 40px; float: left;
+      padding-right: 30px; width: 500px;height: 300px;
+    }
+    .floor{
+      float: left;padding-right: 30px;
+      width: 500px;height: 300px;
+    }
+    .info{margin-left: 40px; float: left;}
+    p.inp{background-color: #cceeff;font-size: 11pt;}
+    #No{font-size: 9pt;}
+    #search{
+      float: right; padding: 7px; font-size: 11pt; margin-top: 570px; font-weight: bold;
+      background: #cceeff; border: 1px; border-radius: 5px;
+    }
+    #home{
+      float: right; border:1px;border-radius: 5px;
+       background-color: white; padding: 4px;
+     }
+    #home:hover,summary:hover{color: white;background-color: #000066}
+    </style>
+  </head>
+  <body>
+    <header>
+      <br/><p><span id="tit">디자인정보관</span></p>
+      <button id="home" onclick="location.href='index.html'">>>메인으로 돌아가기</button><br/>
+    </header>
+    <article>
+      <section>
+        <hr>
+        <figure>
+        <img src="../디자인정보관.jpg" width="800" height="600" alt="디자인정보관">
+        <input id="search" type="button" onclick="Search();" value="✔강의실 찾기"/>
+        <figcaption id="No">건물 No.13</figcaption>
+        </figure>
+        <hr/>
+      <div class="major">
+          <h3>사용 학과</h3>
+          <details><summary>영상예술디자인학과</summary>
+          <p class="inp">&nbsp;예술을 바탕으로 애니메이션, 모션 그래픽, 게임 영상, 디지털 비디오, 뉴미디어 등 다양한 영상물 제작 경험을 제공한다. 미래지향적이며 영상예술 디자인 전공과 함께 테크놀로지와 영상 예술을 결합하여 21세기를 위한 최고 수준의 영상 제작 인재를 양성한다.</p></details>
+        <details>
+          <summary>시각정보디자인학과</summary>
+          <p class="inp">&nbsp;디지털정보화시대에 부응하는 ‘21C형 창조적 Think-Designer의 육성’을 교육 목표로 하며, 디자인에 대한 창의적인 사고능력 개발과 문제해결 능력 배양을 목적으로 사회에 공헌할 수 있는 우수한 예비 디자이너를 배출하고 있다.</p></details>
+        <details><summary>광고홍보학과</summary>
+          <p class="inp">&nbsp;광고 및 홍보에 대한 이론과 실무 능력을 겸비한 인재를 양성하는데 목적을 두고 있으며, 디지털 미디어 시대에 대응하는 실무 적합형 광고 홍보인을 양성한다.</p></details>
+        <details><summary>팬시크래커</summary>
+          <p class="inp">&nbsp;남서울대학교의 디자인관련 3개학과(유리세라믹, 시각정보, 영상예술)가 함께 참여하는 기업으로 다양한 디자인 활동을 통해 제품을 기획, 상품화하고 있다.</p></details>
+        </div>
+      <div class="floor">
+        <h3>층별 안내</h3>
+        <details><summary>1층</summary>
+          <p class="inp">&nbsp;교수연구실(지혜미, 추만카오리, Li Wenhua), PT강의실, 세미나실, 팬시크래커, 기자재보수팀</p></details>
+        <details><summary>2층</summary>
+          <p class="inp">&nbsp;광고홍보학과사무실, 광고홍보학과학생회실, 광고홍보학과교수연구실, 실습실</p></details>
+        <details><summary>3층</summary>
+          <p class="inp">&nbsp;시각정보디자인학과사무실, 시각정보디자인학과교수연구실, 실습실</p></details>
+        <details><summary>4층</summary>
+          <p class="inp">&nbsp;영상예술디자인학과사무실, 영상예술디자인학과학생회실, 시각정보디자인학과학생회실, 영상예술디자인학과교수연구실, 실습실</p></details>
+        <details><summary>5층</summary>
+          <p class="inp">&nbsp;스톱모션제작실, 클레이촬영실, Avid편집실, 라인테스트실, 작화실, 판화실, 스튜디오, 드로잉실, 캐릭터디자인실, 조소실, 워크스테이션IV</p></details>
+      </div>
+      <div class="info">
+        <h3>ⓘ영상예술디자인학과</h3>
+        <ul>
+          <li>☎)041-580-2340</li>
+          <li><a href="https://ani.nsu.ac.kr/" target="_blank" title="영상예술디자인학과 홈페이지">ani.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ시각정보디자인학과</h3>
+        <ul>
+          <li>☎)041-580-2150</li>
+          <li><a href="https://nsuvid.nsu.ac.kr/" target="_blank" title="시각정보디자인학과 홈페이지">nsuvid.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ광고홍보학과</h3>
+        <ul>
+          <li>☎)041-580-2230</li>
+          <li><a href="https://adpr.nsu.ac.kr/" target="_blank" title="광고홍보학과 홈페이지">adpr.nsu.ac.kr</a></li>
+        </ul>
+      </div>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function Search(){
+        var choice = prompt("강의실 번호를 입력하세요.↓↓");
+        var m=parseInt(choice);
+        if (13101<=m&&m<=13130)
+             alert("디자인정보관 1층에 있습니다.");
+        else if (13201<=m&&m<=13230)
+            alert("디자인정보관 2층에 있습니다.");
+        else if (13301<=m&&m<=13330)
+            alert("디자인정보관 3층에 있습니다.");
+        else if (13401<=m&&m<=13430)
+            alert("디자인정보관 4층에 있습니다.");
+        else if (13501<=m&&m<=13530)
+            alert("디자인정보관 5층에 있습니다.");
+        else
+            alert("존재하지 않는 강의실 번호입니다.");
+      }
+    </script>
+  </body>
+</html>

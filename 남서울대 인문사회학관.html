@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>인문사회학관</title>
+    <style type="text/css">
+    #tit {
+      background-color: #cceeff;
+      font-size: 22pt; font-weight: bold;
+      margin: 40px;  padding: 20px;
+      border: 4px solid #000066; border-radius: 50px;
+    }
+    a{text-decoration: none; color: #0077b3;}
+    .major{
+      margin-left: 40px; float: left;
+      padding-right: 30px; width: 500px;height: 300px;
+    }
+    .floor{
+      float: left;padding-right: 30px;
+      width: 500px;height: 300px;
+    }
+    .info{
+      margin-left: 40px; float: left;
+    }
+    p.inp{background-color: #cceeff;font-size: 11pt;}
+    #No{font-size: 9pt;}
+    #search{
+      float: right; padding: 7px; font-size: 11pt; margin-top: 570px; font-weight: bold;
+      background: #cceeff; border: 1px; border-radius: 5px;
+    }
+    #home{
+      float: right; border:1px;border-radius: 5px;
+       background-color: white; padding: 4px;
+     }
+    #home:hover,summary:hover{color: white;background-color: #000066}
+    </style>
+  </head>
+  <body>
+    <header>
+      <br/><p><span id="tit">인문사회학관</span></p>
+      <button id="home" onclick="location.href='index.html'">>>메인으로 돌아가기</button><br/>
+    </header>
+    <article>
+      <section>
+        <hr>
+        <figure>
+        <img src="../인문사회학관.jpg" width="800" height="600" alt="인문사회학관">
+        <input id="search" type="button" onclick="Search();" value="✔강의실 찾기"/>
+        <figcaption id="No">건물 No.10</figcaption>
+        </figure>
+        <hr/>
+      <div class="major">
+          <h3>사용학과</h3>
+          <details><summary>사회복지학과</summary>
+            <p class="inp">&nbsp;사회복지학은 개인의 삶의 질과 조건에 대한 문제의식을 제기하고 실천방안을 탐구하는 학문이다. 급증하는 사회문제를 해결하고 복지수요에 부응할 수 있는 전문 사회복지 인력 양상에 교육 목표를 둔다. 본 학과에서는 이상적인 사회복지 실현을 위하여 사회복지 정책과 제도, 서비스와 프로그램을 개발하고 실천할 수 있는 사회복지 인재를 양성한다.  </p></details>
+          <details><summary>글로벌지역문화학과</summary>
+	          <p class="inp">&nbsp;<strong>영미문화전공</strong> - 실용적인 영어구사능력을 기초로 영미권의 언어·문화 지식을 겸비한 글로벌 인재를 양성하는데 교육목적을 둔다. 실용영어지식, 영어·문화에 대한 지식을 함양하고, 영어 원어 강의 강화와 경쟁력 있는 취업 프로그램을 내실 있게 운영하고 있다.<br/>
+            <strong>일본지역전공</strong> - 일본의 언어와 문화에 대한 이해를 바탕으로 비즈니스 마인드를 갖추게 하여 글로벌한 비즈니스 마인드를 가진 일본지역 전문가를 양성하고 있다. 이를 위해 일본의 자매대학과 복수학위제도를 운영하는 것은 물론이고 매년 다수의 교환학생을 일본으로 파견하여 글로벌한 감각을 익히도록 하고 있다. <br/>
+            <strong>중국지역전공</strong> - 최근 한중 관계의 빠른 발전을 통해 필요로 하는 중국 관련 인재의 양성을 목표로 하고 있다. 관련 교과목은 사회가 요구하는 실용적인 학문을 중심으로 편성되어 있다. 특히 매년 방학을 이용 실질적인 중국 체험 및 중국어 회화를 직접 활용하고 있으며,
+            2학년 및 3학년 과정 중 1년간을 중국 현지의 자매대학에서 이수할 경우 그 학점을 인정해주는 위탁 교육제도를 실시하고 있다.</p></details>
+          <details><summary>노인복지학과</summary>
+	        <p class="inp">&nbsp;급속한 인구노령화로 발생되는 노인복지 서비스문제에 효율적으로 대처할 수 있는 노인복지전문가를 양성하는 데 주안점을 둔다. 복지시설 및 단체에서 복지 서비스를 전달하는 현장 중심의 전문가, 노인복지 정책과 행정현장에서 선도적 역할을 하게 될 행정요원, 향후 성장이 유망한 고령친화 산업분야의 전문요원 양성을 목표로 하고 있다.    </p></details>
+      </div>
+      <div class="floor">
+        <h3>층별 안내</h3>
+        <details><summary>1층</summary>
+          <p class="inp">&nbsp;교수연구실, PT강의실, 실습실, 세미나실,요양보호사교육원, 사회복지학과사무실, 사회복지학과학생회실, 교수휴게실, 자료실, 관리실  </p></details>
+        <details><summary>2층</summary>
+          <p class="inp">&nbsp;교수연구실, PT강의실, 실습실, 세미나실, 노인복지학과사무실, 노인복지학과학생회실  </p></details>
+        <details><summary>3층</summary>
+          <p class="inp">&nbsp;교수연구실, 네트워크언어실습실1/2, PT강의실, 전공실, 세미나실, 글로벌지역문화학과(영미문화)사무실, 영미문학학생회실  </p></details>
+        <details><summary>4층</summary>
+          <p class="inp">&nbsp;교수연구실, PT강의실, 전공실, 시청각실, 글로벌지역문화학과(일본지역)사무실, 일본지역학생회실,  자료실 </p></details>
+        <details><summary>5층</summary>
+          <p class="inp">&nbsp;교수연구실, 정보세미나실, 인터넷검색실, 전공실, 회화강의실, PT강의실, 글로벌지역문화학과(중국지역)사무실, 중국지역학생회실, 창고  </p></details>
+      </div>
+      <div class="info">
+        <h3>ⓘ사회복지학과</h3>
+        <ul>
+          <li>☎)041-580-2070</li>
+	        <li><a href="https://nsuic.nsu.ac.kr/" target="_blank" title="사회복지학과 홈페이지">nsuic.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ글로벌지역문화학과</h3>
+        <ul>
+          <li><strong>영미문화전공</strong></li>
+            <ul>
+              <li>☎)041-580-2160</li>
+              <li><a href="https://english.nsu.ac.kr/" target="_blank" title="글로벌지역문화학과 영미문화전공 홈페이지">english.nsu.ac.kr</a></li>
+            </ul>
+          <li><strong>일본지역전공</strong></li>
+            <ul>
+              <li>☎)041-580-2170</li>
+              <li><a href="https://jp.nsu.ac.kr/" target="_blank" title="글로벌지역문화학과 일본지역전공 홈페이지">jp.nsu.ac.kr</a></li>
+            </ul>
+          <li><strong>중국지역전공</strong></li>
+            <ul>
+              <li>☎)041-580-2240</li>
+              <li><a href="https://china.nsu.ac.kr/" target="_blank" title="글로벌지역문화학과 중국지역전공 홈페이지">china.nsu.ac.kr</a></li>
+            </ul>
+        </ul>
+        <h3>ⓘ노인복지학과</h3>
+        <ul>
+          <li>☎)041-580-2755</li>
+	        <li><a href="https://wela.nsu.ac.kr/" target="_blank" title="노인복지학과 홈페이지">wela.nsu.ac.kr</a></li>
+        </ul>
+      </div>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function Search(){
+        var choice = prompt("강의실번호를 입력하세요.↓↓");
+        var m=parseInt(choice);
+        if (10101<=m&&m<=10110)
+             alert("인문사회학관 1층에 있습니다.");
+        else if (10201<=m&&m<=10208)
+            alert("인문사회학관 2층에 있습니다.");
+        else if (10301<=m&&m<=10308)
+            alert("인문사회학관 3층에 있습니다.");
+        else if (10301<=m&&m<=10406)
+            alert("인문사회학관 4층에 있습니다.");
+        else if (10501<=m&&m<=10505)
+            alert("인문사회학관 5층에 있습니다.");
+        else
+            alert("존재하지 않는 강의실 번호입니다.");
+      }
+    </script>
+  </body>
+</html>

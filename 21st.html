@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>21세기개발관</title>
+    <style type="text/css">
+    #tit {
+      background-color: #cceeff;
+      font-size: 22pt; font-weight: bold;
+      margin: 40px;  padding: 20px;
+      border: 4px solid #000066; border-radius: 50px;
+    }
+    a{text-decoration: none; color: #0077b3;}
+    .major{
+      margin-left: 40px;float: left;
+      padding-right: 30px; width: 500px;height: 300px;
+    }
+    .floor{float: left;padding-right: 30px; width: 500px;height: 300px;}
+    .info{margin-left: 40px; float: left;}
+    p.inp{background-color: #cceeff;font-size: 11pt;}
+    #No{font-size: 9pt;}
+    #search{
+      float: right; padding: 7px; font-size: 11pt; margin-top: 570px; font-weight: bold;
+      background: #cceeff; border: 1px; border-radius: 5px;
+    }
+    #home{
+      float: right; border:1px;border-radius: 5px;
+       background-color: white; padding: 4px;
+     }
+    #home:hover,summary:hover{color: white;background-color: #000066}
+    </style>
+  </head>
+  <body>
+    <header>
+      <br/><p><span id="tit">21세기개발관</span></p>
+      <button id="home" onclick="location.href='index.html'">>>메인으로 돌아가기</button><br/>
+    </header>
+    <article>
+      <section>
+        <hr>
+        <figure>
+        <img src="../21c.jpg" width="800" height="600" alt="21세기개발관">
+        <input id="search" type="button" onclick="Search();" value="✔강의실 찾기"/>
+        <figcaption id="No">건물 No.12</figcaption>
+        </figure>
+        <hr/>
+      <div class="major">
+          <h3>사용 학과</h3>
+          <details><summary>호텔경영학과</summary>
+          <p class="inp">&nbsp;글로벌시대의 호텔서비스 분야를 선도하는 중부권 최고의 학과로 자리매김하고 있다. 이론교육과 실무교육을 이수하고, 호텔서비스기업의 현장교육을 이수한 실무형 서비스 전문가를 육성하고 있으며, 교육과정 운영의 질적 수준을 제고하여 ‘컬럼버스형’의 창조적 호텔리어를 육성하고 있다.</p></details>
+        <details><summary>관광경영학과</summary>
+          <p class="inp">&nbsp;항공, 여행, 호텔, 컨벤션, 이벤트, 레저 등 국내 관광산업의 각 분야 및 관련 공공기관에서 우리나라를 대표하여 중추적인 역할을 수행하게 될 ‘관광전문가’의 양성을 목표로 다양한 관광현상에 대한 이해를 위한 체계적인 이론수업과 국내외 관광산업 분야에서 요구하는 현장 중심의 실무교육을 실시하고 있다.</p></details>
+        <details><summary>뷰티보건학과</summary>
+          <p class="inp">&nbsp;뷰티컨설턴트전공과 헤어디자인전공으로 나뉘어 현장에 필요한 문제해결 능력과 관리자적 마인드를 함양하고자 융합된 교과목체계를 갖추었다. 뷰티컨설턴트전공은 다양한 교육기관과 산업체협약을 통해 미래형 뷰티전문인을 위한 뷰티컨설턴트교육을 중점으로 하며, 헤어디자인전공은 ㈜디이노의 프랑스전통 헤어기술 공유를 통해 전문화된 인재양성과 창조적인 미래 비전을 갖는 뷰티산업의 리더를 배출을 목표로 하고 있다.</p></details>
+      </div>
+      <div class="floor">
+        <h3>층별 안내</h3>
+        <details><summary>1층</summary>
+          <p class="inp">&nbsp;교수연구실(이승길, 김성준, Wang Qian, 이태훈), 뷰티보건학과산학협력교수실, 뷰티보건학과실습실, 시설관리과, 대학건설사업단, 뷰티보건학과사무실, 첨단교통환경연구소, 신우산업관리, SOS세븐도면관리실, 락커룸</p></details>
+        <details><summary>2층</summary>
+          <p class="inp">&nbsp;외국어교육원교수연구실, 원격평생교육원실습실, 외국어교육원교학과, 원격평생교육원행정실, 시네마카페</p></details>
+        <details><summary>3층</summary>
+          <p class="inp">&nbsp;국제문화교류강사연구실, 한국어문화교육과정실습실, 국제문화교류원행정실, 통계분석연구소, 건축도자연구소, 분자진단연구소, 시스템건축도시환경연구소, 글로벌무역전문가양성사업단, 스마트그린건축공학연구소, 국제무역비즈니스센터</p></details>
+        <details><summary>4층</summary>
+          <p class="inp">&nbsp;관광경영학과교수연구실, 관광경역학과실습실, 관광경영학과사무실, 관광경영학과학회실</p></details>
+        <details><summary>5층</summary>
+          <p class="inp">&nbsp;호텔경영학과교수연구실, 호텔경영학과실습실, 호텔경영학과사무실, 호텔경영학과학회실</p></details>
+      </div>
+      <div class="info">
+        <h3>ⓘ호텔경영학과</h3>
+        <ul>
+          <li>☎)041-580-2360</li>
+          <li><a href="https://hotel.nsu.ac.kr/" target="_blank" title="호텔경영학과 홈페이지">hotel.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ관광경영학과</h3>
+        <ul>
+          <li>☎)041-580-2640</li>
+          <li><a href="https://tourism.nsu.ac.kr/" target="_blank" title="관광경영학과 홈페이지">tourism.nsu.ac.kr</a></li>
+        </ul>
+        <h3>ⓘ뷰티보건학과</h3>
+        <ul>
+          <li>☎)041-580-3540</li>
+          <li><a href="https://adpr.nsu.ac.kr/" target="_blank" title="뷰티보건학과 홈페이지">nsubeauty.nsu.ac.kr</a></li>
+        </ul>
+      </div>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function Search(){
+        var choice = prompt("강의실 번호를 입력하세요.↓↓");
+        var m=parseInt(choice);
+        if (12101<=m&&m<=12115)
+             alert("21세기개발관 1층에 있습니다.");
+        else if (12201<=m&&m<=12215)
+            alert("21세기개발관 2층에 있습니다.");
+        else if (12301<=m&&m<=12315)
+            alert("21세기개발관 3층에 있습니다.");
+        else if (12401<=m&&m<=12415)
+            alert("21세기개발관 4층에 있습니다.");
+        else if (12501<=m&&m<=12515)
+            alert("21세기개발관 5층에 있습니다.");
+        else
+            alert("존재하지 않는 강의실 번호입니다.");
+      }
+    </script>
+  </body>
+</html>

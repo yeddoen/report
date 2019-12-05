@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>남서울대학교 안내 지도</title>
+    <style type="text/css">
+        table {
+            width: 40%;
+            height: 100%;
+            margin: auto;
+            text-align: left;
+            position: absolute;
+            left: 760px;
+            bottom: 27px;
+        }
+
+        .button_night {
+            position: absolute;
+            right: 10px;
+            bottom: 50px;
+        }
+    </style>
+
+    <style>
+        .button_shape {
+            margin-top: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border: 1px solid blue;
+            background-color: white;
+            color: blue;
+            padding: 5px;
+        }
+
+        .button_shape:hover {
+            color: white;
+            background-color: rgb(0, 0, 255);
+        }
+    </style>
+    <script type="text/javascript">
+        function javascript1() {
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+
+
+        }
+        function javascript2() {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+    <script>
+
+
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                type = "text/javascript" > $('body').ready(function () {
+                    $('.button_shape').css({
+                        'border': '1px solid white', 'background-color': 'black', 'color': 'white', 'padding': '5px:'
+                    });
+                });
+                $("#btn1").hide();
+            });
+            $("#btn1").click(function () {
+                $("#btn2").show();
+            });
+        });
+        $(document).ready(function () {
+            $("#btn2").click(function () {
+                type = "text/javascript" > $('body').ready(function () {
+                    $('.button_shape').css({
+                        'border': '1px solid blue', 'background-color': 'white', 'color': 'blue', 'padding': '5px:'
+                    });
+                });
+                $("#btn2").hide();
+            });
+            $("#btn2").click(function () {
+                $("#btn1").show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div style="text-align: left">
+        <h1>신입생들을 위한 남서울대학교 안내 지도</h1>
+        <img src="../nsu_map.jpg" weight="600" height="359" alt="남서울대 지도">
+    </div>
+
+    <table border="0">
+        <tr>
+            <td>
+                <button class="button_shape" type="button" onclick="location.href='남서울대 공학1관.html'" title="공학 1관"> 1. 공학 1관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='남서울대 공학2관.html'" title="공학 2관"> 2. 공학 2관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='business.html'" title="상경학관"> 3. 상경학관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='복지회관별관.html'" title="학생복지회관 별관"> 4. 학생복지회관 별관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='chapel.html'" title="화정관"> 5. 화정관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='남서울대 본관.html'" title="본관"> 6. 본관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='molding.html'" title="조형학관"> 7. 조형학관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='학생복지회관.html'" title="학생복지회관"> 8. 학생복지회관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='nsu_library.html'" title="성암기념중앙도서관">
+                    9. 성암기념중앙도서관 </button><br>
+            </td>
+            <td>
+
+                <button class="button_shape" type="button" onclick="location.href='남서울대 인문사회학관.html'" title="인문사회학관"> 10. 인문사회학관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='엘림생활관.html'" title="엘림생활관"> 11. 엘림생활관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='21st.html'" title="21C 개발관"> 12. 21C 개발관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='design.html'" title="디자인 정보관"> 13. 디자인 정보관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='gym.html'" title="성암문화체육관"> 14. 성암문화체육관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='지식정보관.html'" title="지식정보관 및 대학원"> 15. 지식정보관
+                    및 대학원 </button><br>
+                <button class="button_shape" type="button" onclick="location.href='보건의료학관.html'" title="보건의료학관"> 16. 보건의료학관
+                </button><br>
+                <button class="button_shape" type="button" onclick="location.href='아동복지학관.html'" title="아동복지학관"> 17. 아동복지학관
+                </button><br>
+            </td>
+
+        </tr>
+    </table>
+
+    <input type="button" class="button_shape" id="btn1" value="night" onclick="javascript1()">
+    <input type="button" style="display: none" class="button_shape" id="btn2" value="day" onclick="javascript2()">
+
+</body>
+
+</html>
